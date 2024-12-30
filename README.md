@@ -4,7 +4,7 @@
 Chat2Vis is a demonstration project that uses the Gemini API to generate data visualization scripts via natural language input. The generated scripts are then displayed using Streamlit as a web application.
 
 The main part of this pet project is desctiption prompt and code prompt which are sent to model using API_KEY.
-- Description prompt: contains information about schema of dataset including feature names, data types respectively, some requirements for generated script specific python version you prefer.
+- Description prompt: contains information about schema of dataset including feature names, data types respectively, some requirements for generated script, specific python version you prefer.
 - Code prompt: contains the specific instructions for generating the visualization script.
 
     
@@ -40,11 +40,15 @@ The main part of this pet project is desctiption prompt and code prompt which ar
     ```sh
     streamlit run demo.py
     ```
+    ![alt text](image.png)
 
 2. **Interact with the web app:**
     - Select a dataset from the dropdown menu.
     - Enter a natural language prompt to generate a data visualization script.
     - View the generated visualization.
+    ![alt text](image-1.png)
+    - In the case if you want model to use specific chart, you can refine prompt like this.
+    ![alt text](image-2.png)
 
 ## Files
 
