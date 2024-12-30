@@ -78,7 +78,7 @@ import matplotlib.pyplot as plt
 fig, ax = plt.subplots(1, 1, figsize=(10, 5))
 ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
-df_movies = pd.read_csv('netflix_titles.csv')
+df_movies = pd.read_csv('./data/netflix_titles.csv')
 df = df_movies.copy()
 """
 ,
@@ -87,7 +87,7 @@ import matplotlib.pyplot as plt
 fig, ax = plt.subplots(1, 1, figsize=(10, 5))
 ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
-df_students = pd.read_csv('StudentsPerformance.csv')
+df_students = pd.read_csv('./data/StudentsPerformance.csv')
 df = df_students.copy()
 """
 
@@ -120,8 +120,7 @@ def show_chat2vis_ai(dataset):
                 st.write(f"Error executing script: {e}")
 
 def main():
-    st.title("Welcome to Our Research Paper")
-    st.write("This is a demo of our research.")
+    st.title("Chat to Visualization")
     
     dataset = st.selectbox("Choose a dataset", ["netflix_titles.csv", "StudentsPerformance.csv"])
     

@@ -40,15 +40,15 @@ The main part of this pet project is desctiption prompt and code prompt which ar
     ```sh
     streamlit run demo.py
     ```
-    ![alt text](image.png)
+    ![alt text](image/image.png)
 
 2. **Interact with the web app:**
     - Select a dataset from the dropdown menu.
     - Enter a natural language prompt to generate a data visualization script.
     - View the generated visualization.
-    ![alt text](image-1.png)
+    ![alt text](image/image-1.png)
     - In the case if you want model to use specific chart, you can refine prompt like this.
-    ![alt text](image-2.png)
+    ![alt text](image/image-2.png)
 
 ## Files
 
